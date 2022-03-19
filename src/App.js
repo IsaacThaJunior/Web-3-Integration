@@ -1,20 +1,17 @@
-import React from "react";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/footer";
-import Body from "./components/Body/Body";
-
-// import maintext from './components/text'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import FundingPage from './Pages/FundingPage';
+import LandingPage from './Pages/LandingPage';
 
 const App = () => {
-  return (
-    <>
-      <Nav />
-      {/* <div className="bg-white w-full "></div> */}
-      <Body />
-
-      <Footer />
-    </>
-  );
+	return (
+		<Router>
+			<Routes>
+				<Route path="/" exact element={<LandingPage />} />
+				<Route path="/funding-page" exact element={<FundingPage />} />
+			</Routes>
+		</Router>
+	);
 };
 
 export default App;

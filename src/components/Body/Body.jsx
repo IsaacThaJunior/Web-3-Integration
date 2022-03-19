@@ -1,5 +1,6 @@
 import React from 'react';
 import './Body.css';
+import { Link } from 'react-router-dom';
 
 const Body = () => {
 	return (
@@ -16,15 +17,17 @@ const Body = () => {
 							</span>
 						</h2>
 					</div>
-					<div class="lg:flex-shrink-0 max-w-xl mx-auto sm:px-6  lg:px-8 lg:flex">
-						<div class="inline-flex mx-24 rounded-md shadow">
-							<button
-								href="#"
-								class="inline-flex items-center justify-center px-24 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-							>
-								{' '}
-								Get started{' '}
-							</button>
+					<div class="max-w-xl mx-auto lg:px-8 lg:flex">
+						<div class="inline-flex mx-24 mt-3 rounded-md shadow">
+							<Link to="/funding-page">
+								<button
+									href="#"
+									class="inline-flex items-center justify-center lg:px-24 lg:py-3 px-12 py-3  border border-transparent text-base font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-800"
+								>
+									{' '}
+									Get started{' '}
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -6,6 +6,7 @@
 
 body {
 	background-color: #dee7e7;
+	height: 100vh;
 }
 
 .btn {
@@ -27,10 +28,11 @@ body {
 
 .footer {
 	padding: 1rem;
-	position: fixed;
 	bottom: 0;
+	background-color: #FDFFFC;
 	left: 0;
 	width: 100%;
 	text-align: center;
 	color: #000;
+	margin-top: 2rem;
 }
